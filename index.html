@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melbourne Lopes | AI Engineer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+      color: #fff;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+    header, footer {
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.25rem;
+    }
+    .subtitle {
+      color: #aaa;
+      font-size: 1.2rem;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #7cfb83;
+      margin: 1rem auto;
+      display: block;
+    }
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: #ccc;
+      text-decoration: none;
+      font-size: 1.4rem;
+    }
+    .section {
+      margin: 3rem 0;
+    }
+    .projects, .skills {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .projects {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      background-color: #262626;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, #7cfb83 0%, transparent 60%);
+      animation: pulse 5s infinite linear;
+      opacity: 0.05;
+    }
+    @keyframes pulse {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #7cfb83;
+    }
+    .card a {
+      color: #61dafb;
+      text-decoration: none;
+    }
+    ul.skills-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 0.75rem;
+      color: #bbb;
+    }
+    .ai-animation {
+      margin: 0 auto 2rem;
+      width: 60px;
+      height: 60px;
+      border: 4px solid #7cfb83;
+      border-radius: 50%;
+      border-top: 4px solid transparent;
+      animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>Melbourne Lopes</h1>
+    <p class="subtitle">Gen AI | Automation | Full Stack</p>
+    <div class="social-icons">
+      <a href="https://github.com/melbournelopes">GitHub</a>
+      <a href="https://in.linkedin.com/in/melbourne-lopes-0b653a68">LinkedIn</a>
+      <a href="mailto:melbournelopes@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>MelsRagBot</h3>
+        <p>AI assistant using LangChain and Groq for smart query resolution based on RAG(Retrieval Augmented Generation).</p>
+        <a href="https://github.com/melbournelopes/MelsRagBot">View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Buddha AI</h3>
+        <p>A powerful AI assistant based on Gautam Buddha's knowledge of wisdom.</p>
+        <a href="https://github.com/yourusername/automation-toolkit">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>LangChain</li>
+      <li>Streamlit</li>
+      <li>FastAPI</li>
+      <li>LLMs</li>
+      <li>RAG</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Melbourne Lopes. All rights reserved.</p>
+  </footer>
+</body>
+</html>
